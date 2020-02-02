@@ -1,0 +1,36 @@
+.hero {
+  background-image: url("./homepage.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100wh;
+  height: 100vh;
+  display: flex;
+}
+
+.center-content {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 10%;
+  font-family: monospace;
+}
+.button {
+  text-transform: uppercase;
+  color: white;
+  padding: 20px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  color: wheat;
+  border: 1px solid black;
+}
+
+.center-content > h5 {
+  color: white;
+}

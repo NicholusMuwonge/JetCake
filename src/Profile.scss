@@ -1,0 +1,73 @@
+.user-profile .user-profile-card {
+  position: relative;
+  padding-top: 0;
+  overflow: hidden;
+  margin-bottom: 10%;
+}
+
+.user-profile-card .user-profile-header {
+  background: aqua;
+  background-size: cover;
+  height: 135px;
+}
+
+.user-profile-card .user-profile-avatar {
+  position: relative;
+  top: -100px;
+  margin-bottom: -100px;
+  padding: 0 15px;
+}
+
+.user-profile-card .user-profile-avatar img {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.user-profile small {
+  display: block;
+  line-height: 1.428571429;
+  color: #999;
+}
+
+.row {
+  display: unset;
+}
+
+.panel-footer > span {
+  background: rgb(63, 204, 204);
+  color: white;
+  border-radius: 20px;
+}
+
+#upload {
+  width: 25%;
+  margin-left: 40%;
+}
+
+#upload::-webkit-file-upload-button {
+  border-radius: 19px;
+  background-color: rgb(63, 204, 204);
+  border: 0px;
+  color: white;
+}
+
+#nameProfile {
+  width: 90%;
+  margin-left: 5%;
+}
+
+progress {
+  height: 4px;
+  color: rgb(63, 204, 204);
+  border-radius: 20px;
+}
+::-webkit-file-upload-button {
+  border-radius: 19px;
+  background-color: rgb(63, 204, 204);
+  border: 0px;
+  color: white;
+}
