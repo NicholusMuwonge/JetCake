@@ -13,7 +13,7 @@ const Home = () => (
         </h5>
         <br />
         <br />
-        <a href="/signup" className="button">
+        <a href="/register" className="button">
           Getting Started
         </a>
       </div>
