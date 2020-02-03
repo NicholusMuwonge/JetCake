@@ -1,0 +1,15 @@
+.bottom > .navbar {
+  background-color: rgba(0, 0, 0, 0.486);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: wheat;
+}
+
+/* Style the links inside the navigation bar */
+.bottom small {
+  color: wheat;
+  text-decoration: none;
+  margin-left: 40%;
+}
