@@ -2,14 +2,14 @@ import firebase from "firebase/app";
 import "firebase/storage";
 
 var firebaseConfig = {
-  apiKey: "AIzaSyBrwuJIf_5WBCi-KwXXmG30_ZsGx3HL9Zo",
-  authDomain: "jetcake-nicksbro.firebaseapp.com",
-  databaseURL: "https://jetcake-nicksbro.firebaseio.com",
-  projectId: "jetcake-nicksbro",
-  storageBucket: "jetcake-nicksbro.appspot.com",
-  messagingSenderId: "290923039946",
-  appId: "1:290923039946:web:75e64b6eef67516e2a3833",
-  measurementId: "G-TS681YC5DD"
+  apiKey:`${process.env.REACT_APP_API_KEY}`,
+  authDomain: `${process.env.REACT_APP_DOMAIN}`,
+  databaseURL: `${process.env.REACT_APP_URL}`,
+  projectId: `${process.env.REACT_APP_PROJECTID}`,
+  storageBucket: `${process.env.REACT_APP_BUCKET}`,
+  messagingSenderId: `${process.env.REACT_APP_SENDER_ID}`,
+  appId: `${process.env.REACT_APP_APP_ID}`,
+  measurementId: `${process.env.REACT_APP_MEASUREMENT_ID}`
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

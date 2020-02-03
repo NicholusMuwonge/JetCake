@@ -40,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "react-moment": "^0.9.7"
   }
 }
