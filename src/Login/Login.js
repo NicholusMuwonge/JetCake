@@ -136,7 +136,7 @@ class SignIn extends React.Component {
                 name="email"
                 id="email"
                 autoComplete="on"
-                placeholder="james.bond@spectre.com"
+                placeholder="you@email.com"
                 value={this.state.fields.email}
                 onChange={this.handleChange}
                 required
