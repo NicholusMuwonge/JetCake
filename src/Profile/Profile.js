@@ -170,7 +170,7 @@ class Profile extends React.Component {
                 <div className="user-profile-card">
                   <div className="user-profile-header"></div>
                   {this.state.editMode === "yes" ? (
-                    <h4>Edit your profile</h4>
+                    <h4 className="title">Edit your profile</h4>
                   ) : (
                     ""
                   )}
@@ -211,26 +211,26 @@ class Profile extends React.Component {
                       ""
                     )}
                   </div>
+                  <div className="text-center">
+                    {this.state.editMode === "yes" ? (
+                      <input
+                        className="form-control"
+                        type="text"
+                        name="name"
+                        id="nameProfile"
+                        placeholder="John Doe"
+                        defaultValue={this.state.profile.name}
+                        onChange={e => this.handleChange(e)}
+                      />
+                    ) : (
+                      <h5>{this.state.profile.name}</h5>
+                    )}
+                    <small>Name</small>
+                    <br />
+                  </div>
                   <div className="row">
-                    <div className="text-center">
-                      {this.state.editMode === "yes" ? (
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="name"
-                          id="nameProfile"
-                          placeholder="John Doe"
-                          defaultValue={this.state.profile.name}
-                          onChange={e => this.handleChange(e)}
-                        />
-                      ) : (
-                        <h4>{this.state.profile.name}</h4>
-                      )}
-                      <small>Name</small>
-                      <br />
-                    </div>
                     <div className="panel-footer"></div>
-                    <div className="container">
+                    <div className="container other-section">
                       <p>
                         <small>Email</small>
                         {this.state.editMode === "yes" ? (
