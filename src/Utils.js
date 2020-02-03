@@ -1,7 +1,7 @@
 import { Redirect } from "react-router";
 import React, { useState } from "react";
 import "react-confirm-alert/src/react-confirm-alert.css";
-import "./SignUp.scss";
+import "./Signup/SignUp.scss";
 import "react-phone-input-2/lib/style.css";
 import { Alert } from "reactstrap";
 import moment from "moment";

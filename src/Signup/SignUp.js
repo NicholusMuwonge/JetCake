@@ -6,8 +6,8 @@ import "./SignUp.scss";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import axios from "axios";
-import firebase from "./Firebase/Firebase";
-import { AlreadyAuthenticated, Alerts } from "./Utils";
+import firebase from "../Firebase/Firebase";
+import { AlreadyAuthenticated, Alerts } from "../Utils";
 
 class SignUp extends React.Component {
   constructor(props) {

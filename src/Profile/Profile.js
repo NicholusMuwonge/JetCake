@@ -6,8 +6,8 @@ import "./Profile.scss";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import axios from "axios";
-import firebase from "./Firebase/Firebase";
-import { Authenticated, normaliseDate, Alerts } from "./Utils";
+import firebase from "../Firebase/Firebase";
+import { Authenticated, normaliseDate, Alerts } from "../Utils";
 
 class Profile extends React.Component {
   constructor(props) {
@@ -36,11 +36,16 @@ class Profile extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`https://jetcake-backend.herokuapp.com/users/${sessionStorage.getItem("id")}`, {
-        headers: {
-          Authorization: `Bearer ${sessionStorage.getItem("token")}`
+      .get(
+        `https://jetcake-backend.herokuapp.com/users/${sessionStorage.getItem(
+          "id"
+        )}`,
+        {
+          headers: {
+            Authorization: `Bearer ${sessionStorage.getItem("token")}`
+          }
         }
-      })
+      )
       .then(res => {
         Object.values(res.data).map(ObjectsList =>
           Object.values(ObjectsList).map(Items =>
@@ -91,7 +96,9 @@ class Profile extends React.Component {
               ? this.state.profile.address
               : `${this.state.values.label}  ${this.state.fields.address}`,
           photo:
-            this.state.image === "" ? this.state.profile.photo : this.state.image
+            this.state.image === ""
+              ? this.state.profile.photo
+              : this.state.image
         },
         {
           headers: {
@@ -170,6 +177,10 @@ class Profile extends React.Component {
                   <div className="user-profile-avatar text-center">
                     <img
                       alt=""
+                      onerror={
+                        (this.src =
+                          "https://api.adorable.io/avatars/177/abott@adorable.png")
+                      }
                       src={
                         this.state.status === 100
                           ? this.state.image
@@ -342,6 +353,23 @@ class Profile extends React.Component {
                         >
                           Edit Profile
                         </span>
+                        {this.state.editMode === "yes" ? (
+                          <span
+                            data-original-title="Edit My Profile"
+                            data-toggle="tooltip"
+                            type="button"
+                            className="btn btn-sm btn-primary"
+                            onClick={e => this.setState({ editMode: "no" })}
+                            style={{
+                              marginLeft: "3px",
+                              backgroundColor: "orange"
+                            }}
+                          >
+                            Cancel
+                          </span>
+                        ) : (
+                          ""
+                        )}
                       </div>
                     </div>
                   </div>

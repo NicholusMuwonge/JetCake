@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import UnderProduction from "./UderProduction";
-import SignUp from "./SignUp";
-import SignIn from "./Login";
+import SignUp from "./Signup/SignUp";
+import SignIn from "./Login/Login";
 import NavBar from "./NavBar";
-import Profile from "./Profile";
-import Home from "./Home";
-import Footer from "./Footer";
+import Profile from "./Profile/Profile";
+import Home from "./Home/Home";
+import Footer from "./Footer/Footer";
 import "./App.scss";
 
 const Routes = () => (

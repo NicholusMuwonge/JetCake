@@ -1,6 +1,6 @@
 import React,{ useState } from "react";
 import "react-confirm-alert/src/react-confirm-alert.css";
-import "./SignUp.scss";
+import "../Signup/SignUp.scss";
 import "./Login.scss";
 import 'react-phone-input-2/lib/style.css';
 import axios from 'axios';
