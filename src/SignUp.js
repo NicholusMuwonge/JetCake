@@ -67,7 +67,7 @@ class SignUp extends React.Component {
   }
 
   makePost() {
-    const postUrl = "http://127.0.0.1:5000/signup";
+    const postUrl = "https://jetcake-backend.herokuapp.com/signup";
     this.setState({ buttonLoading: true });
     axios
       .post(postUrl, {

@@ -36,7 +36,7 @@ class Profile extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`http://127.0.0.1:5000/users/${sessionStorage.getItem("id")}`, {
+      .get(`https://jetcake-backend.herokuapp.com/users/${sessionStorage.getItem("id")}`, {
         headers: {
           Authorization: `Bearer ${sessionStorage.getItem("token")}`
         }
@@ -59,7 +59,7 @@ class Profile extends React.Component {
   }
 
   makeEdit = () => {
-    const patchUrl = `http://127.0.0.1:5000/users/${sessionStorage.getItem(
+    const patchUrl = `https://jetcake-backend.herokuapp.com/users/${sessionStorage.getItem(
       "id"
     )}/edit`;
     this.setState({ buttonLoading: true });
